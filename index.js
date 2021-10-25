@@ -110,7 +110,7 @@ app.get('/users', (req,res) => {
 //app Method
 app.post('/users',(req,res) => {
   const newUser = req.body;
-  newUser.id = users.leghth;
+  newUser.id = users.length;
   users.push(newUser);
   res.send(JSON.stringify(newUser));
 })
